@@ -41,6 +41,8 @@ import subprocess
 import os, sys
 import tempfile
 
+os.system("rm ~/ShellOutTempFile*")
+
 #program list function (globals are evil)
 def listcommands(option=None):
   #
@@ -49,16 +51,15 @@ def listcommands(option=None):
   # ["Menu Label", "command", "ext"]
   # 
   # Where what gets executed is command fileame so include and flags needed in the command.
-  # Workflow is as suggested by Google Nik Collection
   programlist = [
-  ["Sharpener Pro 3 Raw Presharpening", "open -W -a \"Sharpener Pro 3 Raw Presharpening\"", "tiff"],
-  ["Dfine2", "open -W -a \"Dfine2\"", "tiff"],
-  ["HDR Efex Pro 2", "open -W -a \"HDR Efex Pro 2\"", "tiff"],
-  ["Viveza 2", "open -W -a \"Viveza 2\"", "tiff"],
-  ["Color Efex Pro 4", "open -W -a \"Color Efex Pro 4\"", "tiff"],
-  ["Silver Efex Pro 2", "open -W -a \"Silver Efex Pro 2\"", "tiff"],
-  ["Analog Efex Pro 2", "open -W -a \"Analog Efex Pro 2\"", "tiff"],
-  ["Sharpener Pro 3 Output Sharpening", "open -W -a \"Sharpener Pro 3 Output Sharpening\"", "tiff"],
+  ["Sharpener Pro 3 Raw Presharpening", "open -W -a \"Sharpener Pro 3 Raw Presharpening\"", "tiff", False],
+  ["Dfine2", "open -W -a \"Dfine2\"", "tiff", False],
+  ["HDR Efex Pro 2", "open -W -a \"HDR Efex Pro 2\"", "tiff", True],
+  ["Viveza 2", "open -W -a \"Viveza 2\"", "tiff", False],
+  ["Color Efex Pro 4", "open -W -a \"Color Efex Pro 4\"", "tiff", False],
+  ["Silver Efex Pro 2", "open -W -a \"Silver Efex Pro 2\"", "tiff", False],
+  ["Analog Efex Pro 2", "open -W -a \"Analog Efex Pro 2\"", "tiff", False],
+  ["Sharpener Pro 3 Output Sharpening", "open -W -a \"Sharpener Pro 3 Output Sharpening\"", "tiff", False],
   ["","",""]
   ]
   
@@ -121,6 +122,12 @@ def plugin_main(image, drawable, visible, command):
   pdb.gimp_progress_pulse()
   child = subprocess.Popen(args, shell=False)
   child.communicate()
+
+  if progtorun[3]:
+    try:
+      os.rename(os.getenv('HOME') + '/ShellOutTempFile_HDR.tif', tempfilename)
+    except:
+      OSError
 
   # put it as a new layer in the opened image
   try:

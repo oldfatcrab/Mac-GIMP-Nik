@@ -27,7 +27,4 @@ curl -o /Applications/GIMP.app/Contents/Resources/lib/gimp/2.0/plug-ins/ShellOut
 
 ## License
 
-This project is licensed under the GPL v3 License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Bugs:
-- HDR Efex saves result to $HOME instead of temp
+This script is licensed under the GPL v3 License - see the [LICENSE.md](LICENSE.md) file for details
