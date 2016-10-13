@@ -49,12 +49,16 @@ def listcommands(option=None):
   # ["Menu Label", "command", "ext"]
   # 
   # Where what gets executed is command fileame so include and flags needed in the command.
+  # Workflow is as suggested by Google Nik Collection
   programlist = [
-  ["Viveza 2", "\"C:\\Program Files\\Google\\Nik Collection\\Viveza 2\\Viveza 2 (64-Bit)\\Viveza 2.exe\"", "png"],
-  ["Color Efex Pro 4", "\"C:\\Program Files\\Google\\Nik Collection\\Color Efex Pro 4\\Color Efex Pro 4 (64-Bit)\\Color Efex Pro 4.exe\"", "tif"],
-  ["Analog Efex Pro 2", "\"C:\\Program Files\\Google\\Nik Collection\\Analog Efex Pro 2\\Analog Efex Pro 2 (64-Bit)\\Analog Efex Pro 2.exe\"", "tif"],
-  ["HDR Efex Pro 2", "\"C:\\Program Files\\Google\\Nik Collection\\HDR Efex Pro 2\\HDR Efex Pro 2 (64-Bit)\\HDR Efex Pro 2.exe\"", "tif"],
-  ["Silver Efex Pro 2", "\"C:\\Program Files\\Google\\Nik Collection\\Silver Efex Pro 2\\Silver Efex Pro 2 (64-Bit)\\Silver Efex Pro 2.exe\"", "tif"],
+  ["Sharpener Pro 3 Raw Presharpening", "open -W -a \"Sharpener Pro 3 Raw Presharpening\"", "tiff"],
+  ["Dfine2", "open -W -a \"Dfine2\"", "tiff"],
+  ["HDR Efex Pro 2", "open -W -a \"HDR Efex Pro 2\"", "tiff"],
+  ["Viveza 2", "open -W -a \"Viveza 2\"", "tiff"],
+  ["Color Efex Pro 4", "open -W -a \"Color Efex Pro 4\"", "tiff"],
+  ["Silver Efex Pro 2", "open -W -a \"Silver Efex Pro 2\"", "tiff"],
+  ["Analog Efex Pro 2", "open -W -a \"Analog Efex Pro 2\"", "tiff"],
+  ["Sharpener Pro 3 Output Sharpening", "open -W -a \"Sharpener Pro 3 Output Sharpening\"", "tiff"],
   ["","",""]
   ]
   
