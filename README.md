@@ -27,4 +27,4 @@ curl -o /Applications/GIMP.app/Contents/Resources/lib/gimp/2.0/plug-ins/ShellOut
 
 ## License
 
-This script is licensed under the GPL v3 License - see the [LICENSE.md](LICENSE.md) file for details
+This script is licensed under the GPL v3 License: that means you can redistribute it and/or modify it under the terms of the [GNU General Public License v3](LICENSE) as published by the Free Software Foundation.
