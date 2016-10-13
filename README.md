@@ -21,7 +21,8 @@ curl -o /tmp/ShellOut.py https://raw.githubusercontent.com/oldfatcrab/Mac-GIMP-N
 
 ## Credits
 
-- **Rob Antonishen** - *Initial work* - [gimpScripts](http://gimpscripts.com/tag/rob-antonishen/)
+- **Lyle Kroll** - *Windows Version* - [gimpChat](http://gimpchat.com/viewtopic.php?f=9&t=13847&start=10#p188412)
+- **Rob Antonishen** - *Initial work* - [gimpScripts](http://registry.gimp.org/node/24977)
 
 ## License
 

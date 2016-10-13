@@ -10,8 +10,8 @@ Rob Antonishen
 Version:
 0.7 fixed file save bug where all files were png regardless of extension
 0.6 modified to allow for a returned layer that is a different size 
-   than the saved layer for
-  0.5 file extension parameter in program list.
+    than the saved layer for
+0.5 file extension parameter in program list.
 0.4 modified to support many optional programs.
 
 this script is modelled after the mm extern LabCurves trace plugin 
@@ -50,21 +50,11 @@ def listcommands(option=None):
   # 
   # Where what gets executed is command fileame so include and flags needed in the command.
   programlist = [
-  ["XNView", "\"C:\\PF\\XnView\\xnview.exe\"", "png"],
-  ["MS Paint", "\"..\\..\\..\\..\\WINDOWS\\system32\\mspaint.exe\"", "bmp"],
-  ["InPaint", "\"C:\\PF\\Inpaint\\Inpaint.exe\"", "png"],
-  #["Deep Paint", "\"C:\\Program Files\\DeepPaint\\deeppaint.exe\"", "jpg"],
-  #["Inkscape", "\"C:\\Program Files\\Inkscape\\inkscape.exe\"", "png"],
-  #["PaintDOTNet", "\"C:\\Program Files\\Paint.NET\\PaintDotNet.exe\"", "png"],
-  #["MyPaint", "\"C:\\Program Files\\MyPaint\\mypaint.exe\"", "png"],
-  #["Photo Filter Factory", "\"C:\\Program Files\\Photo Filter Factory\\Photo Filter Factory.exe\"", "png"],
-  #["Photo Pos Pro", "\"C:\\Program Files\\Photo Pos Pro\\Photo Pos Pro.exe\"", "png"],
-  ["Java Image Editor", "\"C:\\JavaJars\\imageeditor.bat\"", "png"],
-  ["Java Mosaic", "\"C:\\JavaJars\\mosaic.bat\"", "png"],
-  ["JDraw", "\"C:\\JavaJars\\jdraw.bat\"", "png"],
-  #["Vector Magic", "\"C:\\Program Files\\Vector Magic\\vmde.exe\"", "png"],
-  #["Photo Clinic", "\"C:\\MAGIX\\Photo_Clinic_45\\PhotoClinic.exe\"", "png"],
-  ["Smilla Enlarger", "\"C:\\utils\\SmillaEnlarger\\SmillaEnlarger.exe\"", "png"],
+  ["Viveza 2", "\"C:\\Program Files\\Google\\Nik Collection\\Viveza 2\\Viveza 2 (64-Bit)\\Viveza 2.exe\"", "png"],
+  ["Color Efex Pro 4", "\"C:\\Program Files\\Google\\Nik Collection\\Color Efex Pro 4\\Color Efex Pro 4 (64-Bit)\\Color Efex Pro 4.exe\"", "tif"],
+  ["Analog Efex Pro 2", "\"C:\\Program Files\\Google\\Nik Collection\\Analog Efex Pro 2\\Analog Efex Pro 2 (64-Bit)\\Analog Efex Pro 2.exe\"", "tif"],
+  ["HDR Efex Pro 2", "\"C:\\Program Files\\Google\\Nik Collection\\HDR Efex Pro 2\\HDR Efex Pro 2 (64-Bit)\\HDR Efex Pro 2.exe\"", "tif"],
+  ["Silver Efex Pro 2", "\"C:\\Program Files\\Google\\Nik Collection\\Silver Efex Pro 2\\Silver Efex Pro 2 (64-Bit)\\Silver Efex Pro 2.exe\"", "tif"],
   ["","",""]
   ]
   
